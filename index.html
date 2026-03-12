@@ -1,65 +1,179 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfólio</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Estagiária de TI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
+    <!-- MENU -->
+    <header>
+        <div class="logo">
+            <h2>&lt;Dev.Profile/&gt;</h2>
+        </div>
+        <div class="menu-mobile" onclick="abrirMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="menu">
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#skills">Skills</a>
+            <a href="#cursos">Cursos</a>
+        </nav>
+    </header>
 
-<h1 class="logo">Portfólio</h1>
+    <div class="container">
+        
+        <!-- SOBRE MIM -->
+        <section id="sobre" style="margin-bottom: 80px; text-align: center; padding-top: 20px;">
+            <div style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #ffd000; margin: 0 auto 20px; overflow: hidden; box-shadow: 0 0 20px rgba(255,208,0,0.3);">
+                <img src="20260210171429779.jpg" alt="Minha Foto" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h1 style="color: #ffd000; margin-bottom: 15px; font-size: 2.5em;">Olá, eu sou a Layla Farias</h1>
+            <h3 style="margin-bottom: 25px; color: #ccc;">Estagiária em T.I / Desenvolvimento Front-end</h3>
+            <p style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.1em; color: #e0e0e0;">
+                Sou estudante na área de Informática, e sou apaixonada por criar interfaces, resolver problemas complexos com lógica e aprender sobre novas tecnologias.
+                Atualmente busco minha primeira oportunidade como estagiária para colocar a mão na massa, entregar valor para a empresa e iniciar minha carreira como desenvolvedora!
+            </p>
+            <div style="margin-top: 35px;">
+                <a href="#projetos" style="background: #ffd000; color: #140018; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: 0.3s; display: inline-block;">Meus Trabalhos</a>
+                <a href="https://linkedin.com" target="_blank" style="margin-left: 20px; color: #ffd000; font-size: 1.8em; text-decoration: none; vertical-align: middle; transition: 0.3s;"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" style="margin-left: 15px; color: white; font-size: 1.8em; text-decoration: none; vertical-align: middle; transition: 0.3s;"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
 
-<nav id="menu">
+        <hr style="border-color: rgba(255,208,0,0.1); margin-bottom: 50px;">
 
-<a href="index.html">Início</a>
-<a href="sobre.html">Sobre</a>
-<a href="portfolio.html">Projetos & Skills</a>
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2 style="color: #ffd000; text-align: center; font-size: 2em; margin-bottom: 10px;">Meus Projetos</h2>
+            <div class="cards">
+                
+                <div class="card">
+                    <img src="SoleSemente.png" alt="Projeto 1">
+                    <h3 style="color: #ffd000; margin-bottom: 10px;"> Floricultura Sol e Semente </h3>
+                    <p style="margin-bottom: 15px; font-size: 14px; color: #ccc; text-align: center;">Projeto de site para uma floricultura fictícia com catálogo de produtos, design responsivo e interface voltada para apresentação de arranjos florais.</p>
+                    <div class="botoes-card">
+                        <a href="https://github.com/livia-com/SoleSemente"><i class="fa-brands fa-github"></i> Repositório</a>
+                        <a href="https://livia-com.github.io/SoleSemente/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Site</a>
+                    </div>
+                </div>
 
-</nav>
+                <div class="card">
+                    <img src="calcIMC.png" alt="Projeto 2">
+                    <h3 style="color: #ffd000; margin-bottom: 10px;"> Calculadora IMC</h3>
+                    <p style="margin-bottom: 15px; font-size: 14px; color: #ccc; text-align: center;">Aplicação web para cálculo de IMC, com armazenamento de histórico de resultados e exibição de dicas de saúde baseadas na classificação obtida.</p>
+                    <div class="botoes-card">
+                        <a href="https://github.com/LaylaFarias/calculadora"><i class="fa-brands fa-github"></i> Repositório</a>
+                        <a href="https://laylafarias.github.io/calculadora/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Site</a>
+                    </div>
+                </div>
 
-<div class="menu-mobile" onclick="abrirMenu()">☰</div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=300&h=160&fit=crop" alt="Projeto 3">
+                    <h3 style="color: #ffd000; margin-bottom: 10px;">Consumo de API - Clima</h3>
+                    <p style="margin-bottom: 15px; font-size: 14px; color: #ccc; text-align: center;">Projeto consumindo a API do OpenWeather para exibir o clima local em tempo real.</p>
+                    <div class="botoes-card">
+                        <a href="#"><i class="fa-brands fa-github"></i> Repositório</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Site</a>
+                    </div>
+                </div>
 
-</header>
+            </div>
+        </section>
 
-<section class="hero">
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2 class="titulo-skills">Hard & Soft Skills</h2>
+            <div class="skills">
+                
+                <div class="card" style="flex: 1; min-width: 280px;">
+                    <h3 style="color: #ffd000; border-bottom: 2px solid #ffd000; padding-bottom: 10px; width: 100%; margin-bottom: 15px; text-align: left;">
+                        <i class="fa-solid fa-code" style="margin-right: 8px;"></i> Hard Skills (Técnicas)
+                    </h3>
+                    <ul>
+                        <li><i class="fa-brands fa-html5" style="color: #e34c26; font-size: 1.2em; width: 25px;"></i> HTML5 Semântico</li>
+                        <li><i class="fa-brands fa-css3-alt" style="color: #264de4; font-size: 1.2em; width: 25px;"></i> CSS3 Flexbox</li>
+                        <li><i class="fa-brands fa-js" style="color: #f0db4f; font-size: 1.2em; width: 25px;"></i> JavaScript (Lógica e DOM)</li>
+                        <li><i class="fa-solid fa-database" style="color: #aaa; font-size: 1.2em; width: 25px;"></i> Lógica de Banco de Dados</li>
+                    </ul>
+                </div>
 
-<h2>Olá, eu sou Layla</h2>
+                <div class="card" style="flex: 1; min-width: 280px;">
+                    <h3 style="color: #ffd000; border-bottom: 2px solid #ffd000; padding-bottom: 10px; width: 100%; margin-bottom: 15px; text-align: left;">
+                        <i class="fa-solid fa-users" style="margin-right: 8px;"></i> Soft Skills
+                    </h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check" style="color: #ffd000; font-size: 1.2em; width: 25px;"></i> Aprendizado Contínuo</li>
+                        <li><i class="fa-solid fa-check" style="color: #ffd000; font-size: 1.2em; width: 25px;"></i> Trabalho em equipe</li>
+                        <li><i class="fa-solid fa-check" style="color: #ffd000; font-size: 1.2em; width: 25px;"></i> Organização e Proatividade</li>
+                        <li><i class="fa-solid fa-check" style="color: #ffd000; font-size: 1.2em; width: 25px;"></i> Comunicação clara e objetiva</li>
+                    </ul>
+                </div>
 
-<h3>Estudante de Desenvolvimento Web</h3>
+            </div>
+        </section>
 
-<p>
-Crio sites modernos, responsivos e interativos utilizando HTML, CSS e JavaScript.
-</p>
+        <!-- CURSOS E CERTIFICADOS -->
+        <section id="cursos">
+            <h2 class="titulo-certificados">Cursos Concluídos</h2>
+            <div class="certificados">
+                
+                <div class="card-certificado">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtuzd2YjRAisL5krqaGX4IXhpJRv174JYe6Q&s" alt="Curso de Lógica">
+                    <h3>Inglês e Informática Kids</h3>
+                    <p><i class="fa-regular fa-clock"></i> Carga horária: 108h</p>
+                    <p><i class="fa-solid fa-building-columns"></i> Netway Cursos</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-certificate"></i> Ver Certificado</a>
+                </div>
 
-<div class="hero-botoes">
+                <div class="card-certificado">
+                    <img src="https://editalconcursosbrasil.com.br/wp-content/uploads/2016/09/concurso-ufc-ce-1.png" alt="Curso Web Design">
+                    <h3>Fábrica de Programadores: Aprendendo a Programar com Games e IA</h3>
+                    <p><i class="fa-regular fa-clock"></i> Carga horária: 200h</p>
+                    <p><i class="fa-solid fa-building-columns"></i> UFC</p>
+                    <a href="1.png" target="_blank"><i class="fa-solid fa-certificate"></i> Ver Certificado</a>
+                </div>
 
-<a href="portfolio.html" class="btn">Ver Projetos</a>
-<a href="sobre.html" class="btn-outline">Sobre Mim</a>
+                <div class="card-certificado">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6dKEwGzFIShGkwG73FJtsdzEjywkc12jZw&s" alt="Curso Huawei">
+                    <h3> Huawei ICT Academy</h3>
+                    <p><i class="fa-regular fa-clock"></i> Carga horária: 20h</p>
+                    <p><i class="fa-solid fa-building-columns"></i> Plataforma EAD</p>
+                    <a href="LaylaFarias.png" target="_blank"><i class="fa-solid fa-certificate"></i> Ver Certificado</a>
+                </div>
 
-</div>
+            </div>
+        </section>
 
-</section>
+    </div>
 
-<footer>
+    <!-- RODAPÉ -->
+    <footer>
+        <h2 style="color: #ffd000; margin-bottom: 20px; font-size: 1.8em;">Vamos conversar?</h2>
+        <p style="color: #ccc; margin-bottom: 30px; font-size: 1.1em;">Estou à disposição para entrevistas e oportunidades de estágio na área de T.I!</p>
+        
+        <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          
+            <a href="https://w.app/xdopzz" target="_blank" style="border: 2px solid #ffd000; color: #ffd000; padding: 10px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: 0.3s;">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
 
-<p>© 2026 - Portfólio Layla</p>
+        <p style="color: #888; font-size: 0.9em; border-top: 1px solid rgba(255,208,0,0.1); padding-top: 20px; width: 80%; margin: 0 auto;">
+            &copy; 2026 - Desenvolvido com muita dedicação por Layla Faria .
+        </p>
+    </footer>
 
-<div class="redes-footer">
+    <!-- BOTÃO TOPO -->
+    <button id="topo" title="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-<a href="#">Instagram</a>
-<a href="#">GitHub</a>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
